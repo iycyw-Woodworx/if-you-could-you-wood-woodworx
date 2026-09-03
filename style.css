@@ -64,3 +64,111 @@ body{color:var(--ink);background:var(--cream)}
 .work-card:after{content:'+';opacity:1;background:rgba(27,16,10,.68)}
 @media(max-width:850px){.site-header{background-color:#211109}.brand-name{font-size:11px}.brand-logo{width:55px;height:40px}.section-head h2{color:inherit}.wood-dark{background-image:linear-gradient(rgba(31,15,8,.78),rgba(31,15,8,.84)),url('images/charred-wood-texture.jpg')}}
 @media(max-width:520px){.hero h1{font-size:46px}.section-head h2{font-size:43px}.wood-light,.wood-reclaimed{background-image:linear-gradient(rgba(246,234,216,.90),rgba(246,234,216,.90)),url('images/light-pine-texture.jpg')}}
+
+/* v4 — hard contrast rules for reliable readability on every device */
+.wood-dark{
+  color:#fff !important;
+  background-color:#211109 !important;
+  background-image:linear-gradient(rgba(27,12,6,.88),rgba(27,12,6,.92)),url('images/charred-wood-texture.jpg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-attachment:scroll !important;
+}
+.wood-dark .section-head,
+.wood-dark .section-head > p,
+.wood-dark .eyebrow,
+.wood-dark h2,
+.wood-dark h3,
+.wood-dark p,
+.wood-dark strong,
+.wood-dark span{
+  color:#fff !important;
+  text-shadow:0 2px 4px rgba(0,0,0,.55) !important;
+}
+.wood-dark h2 span,
+.wood-dark h1 span{
+  color:#f0a45f !important;
+}
+.wood-dark .cards article{
+  background:rgba(28,13,7,.96) !important;
+}
+.wood-dark .cards article > span,
+.wood-dark .cards article a{
+  color:#f0ad70 !important;
+}
+.wood-dark .cards article p{
+  color:#f6e5d5 !important;
+}
+.wood-light,
+.wood-reclaimed{
+  color:#21130b !important;
+  background-color:#ead6b9 !important;
+  background-image:linear-gradient(rgba(246,234,216,.91),rgba(246,234,216,.91)),url('images/light-pine-texture.jpg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-attachment:scroll !important;
+}
+.wood-light .section-head,
+.wood-light .section-head > p,
+.wood-light .eyebrow,
+.wood-light h2,
+.wood-light h3,
+.wood-light p,
+.wood-light strong,
+.wood-light span,
+.wood-reclaimed .section-head,
+.wood-reclaimed .section-head > p,
+.wood-reclaimed .eyebrow,
+.wood-reclaimed h2,
+.wood-reclaimed h3,
+.wood-reclaimed p,
+.wood-reclaimed strong,
+.wood-reclaimed span{
+  color:#21130b !important;
+  text-shadow:none !important;
+}
+.wood-light h2 span,
+.wood-reclaimed h2 span{
+  color:#a85f28 !important;
+}
+.wood-light .steps > div,
+.wood-reclaimed .steps > div,
+.wood-light .service-box,
+.wood-reclaimed .service-box{
+  background:rgba(255,250,242,.97) !important;
+}
+.wood-light .steps h3,
+.wood-light .steps p,
+.wood-reclaimed .steps h3,
+.wood-reclaimed .steps p,
+.wood-light .service-box h2,
+.wood-light .service-box p,
+.wood-reclaimed .service-box h2,
+.wood-reclaimed .service-box p{
+  color:#21130b !important;
+}
+.page-hero{
+  color:#fff !important;
+  background-color:#241108 !important;
+  background-image:linear-gradient(rgba(28,12,5,.82),rgba(28,12,5,.88)),url('images/logo-wood-texture.jpg') !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+.page-hero h1,.page-hero p,.page-hero .eyebrow{
+  color:#fff !important;
+  text-shadow:0 2px 6px rgba(0,0,0,.8) !important;
+}
+.page-hero .eyebrow{color:#f0b57a !important}
+.footer.wood-dark{
+  color:#fff !important;
+  background:#211109 !important;
+  background-image:linear-gradient(rgba(25,10,5,.9),rgba(25,10,5,.94)),url('images/charred-wood-texture.jpg') !important;
+}
+.footer.wood-dark strong,.footer.wood-dark p,.footer.wood-dark a,.footer.wood-dark .copyright{
+  color:#fff !important;
+  text-shadow:0 1px 3px rgba(0,0,0,.6) !important;
+}
+@media(max-width:520px){
+  .wood-dark{background-image:linear-gradient(rgba(27,12,6,.91),rgba(27,12,6,.95)),url('images/charred-wood-texture.jpg') !important}
+  .wood-light,.wood-reclaimed{background-image:linear-gradient(rgba(246,234,216,.94),rgba(246,234,216,.94)),url('images/light-pine-texture.jpg') !important}
+}
