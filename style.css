@@ -19,3 +19,48 @@ body{color:#24160f}
 .work-card:after{content:'+';position:absolute;right:10px;top:10px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(27,16,10,.75);color:#fff;font-size:22px;line-height:1;opacity:0;transition:opacity .2s}
 .work-card:hover:after{opacity:1}
 @media(max-width:520px){.work-card img{height:320px}}
+
+/* v3 contrast and readability fixes */
+:root{--ink:#21130b;--cream:#f6ead8;--gold:#e0a062}
+body{color:var(--ink);background:var(--cream)}
+/* Make wood sections readable even if a background image is slow/missing. */
+.wood-light{color:#21130b;background-color:#f3dfc4;background-image:linear-gradient(rgba(246,234,216,.84),rgba(246,234,216,.84)),url('images/light-pine-texture.jpg');background-blend-mode:normal;background-attachment:scroll}
+.wood-reclaimed{color:#21130b;background-color:#ead0ad;background-image:linear-gradient(rgba(239,216,185,.88),rgba(239,216,185,.88)),url('images/reclaimed-wood-texture.jpg');background-blend-mode:normal;background-attachment:scroll}
+.wood-dark{color:#fff;background-color:#24130b;background-image:linear-gradient(rgba(31,15,8,.72),rgba(31,15,8,.78)),url('images/charred-wood-texture.jpg');background-blend-mode:normal;background-attachment:scroll}
+.wood-home{color:#fff;background-color:#32170b;background-image:linear-gradient(rgba(39,17,8,.70),rgba(39,17,8,.76)),url('images/logo-wood-texture.jpg');background-blend-mode:normal;background-attachment:scroll}
+/* Explicit text colors prevent inherited white text from disappearing on light sections. */
+.wood-light .section-head,.wood-light .section-head>p,.wood-light h2,.wood-light h3,.wood-light p,.wood-light .eyebrow,.wood-light .text-link{color:#21130b}
+.wood-reclaimed .section-head,.wood-reclaimed .section-head>p,.wood-reclaimed h2,.wood-reclaimed h3,.wood-reclaimed p,.wood-reclaimed .eyebrow{color:#21130b}
+.wood-light .section-head h2 span,.wood-reclaimed .section-head h2 span,.wood-light h2 span,.wood-reclaimed h2 span{color:#a85f28}
+.wood-dark .section-head,.wood-dark .section-head>p,.wood-dark h2,.wood-dark h3,.wood-dark p,.wood-dark .eyebrow{color:#fff}
+.wood-dark .section-head h2 span,.wood-dark h2 span{color:#e7a263}
+.page-hero{background-color:#2a150b;background-image:linear-gradient(rgba(34,15,7,.70),rgba(34,15,7,.78)),url('images/logo-wood-texture.jpg');background-blend-mode:normal}
+.page-hero h1,.page-hero p,.page-hero .eyebrow{color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.75)}
+.page-hero .eyebrow{color:#f0b57a}
+.site-header,.footer{background-color:#211109}
+.site-header .brand-name, .site-header nav a{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.65)}
+.site-header nav a:hover{color:#f0b57a}
+.brand-logo{background:#4a2815}
+.hero:after{background:linear-gradient(90deg,rgba(20,9,4,.86),rgba(20,9,4,.55))}
+.hero-copy,.hero-copy .lead,.hero-copy .eyebrow{color:#fff;text-shadow:0 2px 7px rgba(0,0,0,.65)}
+.hero-kicker{color:#f2b073;text-shadow:0 2px 5px rgba(0,0,0,.7)}
+.hero h1 span{color:#f0a45f}
+.cards article{background:rgba(30,15,8,.90)}
+.cards article p{color:#f1dfce}
+.cards article a{color:#f0ad70}
+.steps>div{background:rgba(255,249,239,.90)}
+.steps h3,.steps p{color:#21130b}
+.service-box{background:rgba(255,249,239,.94);color:#21130b}
+.service-box h2,.service-box p{color:#21130b}
+.work-card div,.work-card h3,.work-card p{color:#21130b}
+.quote-panel,.quote-panel p,.quote-panel h2{color:#fff}
+.quote-panel h2 span{color:#f0a45f}
+.footer.wood-dark,.footer.wood-dark strong,.footer.wood-dark p,.footer.wood-dark a{color:#fff}
+.footer.wood-dark p{color:#ead9c8}
+/* Keep portfolio cards image-only; titles are used only for the enlarged viewer. */
+.work-card div{display:none}
+.work-card{background:#1e1009;border:1px solid rgba(60,35,18,.25)}
+.work-card img{display:block}
+.work-card:after{content:'+';opacity:1;background:rgba(27,16,10,.68)}
+@media(max-width:850px){.site-header{background-color:#211109}.brand-name{font-size:11px}.brand-logo{width:55px;height:40px}.section-head h2{color:inherit}.wood-dark{background-image:linear-gradient(rgba(31,15,8,.78),rgba(31,15,8,.84)),url('images/charred-wood-texture.jpg')}}
+@media(max-width:520px){.hero h1{font-size:46px}.section-head h2{font-size:43px}.wood-light,.wood-reclaimed{background-image:linear-gradient(rgba(246,234,216,.90),rgba(246,234,216,.90)),url('images/light-pine-texture.jpg')}}
